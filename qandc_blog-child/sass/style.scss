@@ -6,11 +6,11 @@
 @import "compass/reset";
 @import "bourbon/bourbon";
 @import "neat/neat";
-
+@import "partials/variables";
 @import url("../twentyfifteen/style.css");
 
 
 @import "partials/existing_styles";
 @import "partials/structure";
 @import "partials/category-drop";
-@import "partials/variables";
+

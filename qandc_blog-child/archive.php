@@ -24,7 +24,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 			<?php custom_breadcrumbs(); ?>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?><?php endif; ?>
-
+			<section id="post-contain">
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) : the_post();
@@ -38,7 +38,7 @@ get_header(); ?>
 
 			// End the loop.
 			endwhile;
-
+			
 			// Previous/next page navigation.
 			the_posts_pagination( array(
 				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
@@ -52,7 +52,7 @@ get_header(); ?>
 
 		endif;
 		?>
-
+		</section>
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 

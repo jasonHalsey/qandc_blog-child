@@ -54,6 +54,13 @@ function bones_custom_image_sizes( $sizes ) {
     ) );
 }
 
+/*  Trim excerpt length
+  /* ------------------------------------ */
+function custom_excerpt_length( $length ) {
+    return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 /*  Breadcrumbs
   /* ------------------------------------ */
