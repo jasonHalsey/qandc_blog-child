@@ -23,15 +23,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<?php custom_breadcrumbs(); ?>
-			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?>
- 
-			<?php endif; ?>
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?><?php endif; ?>
 
 			<?php
 			// Start the Loop.

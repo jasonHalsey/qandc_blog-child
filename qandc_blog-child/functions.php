@@ -17,7 +17,7 @@
 /*  Add Custom Scripts
   /* ------------------------------------ */ 
   function wpb_adding_scripts() {
-    wp_register_script('custom_scripts', get_template_directory_uri() . '/js/custom_scripts.js');
+    wp_register_script('custom_scripts',  get_stylesheet_directory_uri() . '/js/scripts.js');
     wp_enqueue_script('custom_scripts');
   }
   add_action( 'wp_footer', 'wpb_adding_scripts' ); 
@@ -30,12 +30,28 @@
   register_sidebar(array(
     'name'=> 'Top Sidebar',
     'id' => 'top_sidebar',
-    'before_widget' => '<div id="filter_block" class="widget ">',
+    'before_widget' => '<div id="filter_block" >',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
   ));
 
+}
+
+/*  thumbnail Size Options 
+  /* ------------------------------------ */ 
+
+// Thumbnail sizes
+add_image_size( 'bones-thumb-600', 600, 150, true );
+add_image_size( 'bones-thumb-320', 320, 200, true );
+
+add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
+
+function bones_custom_image_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'bones-thumb-600' => __('600px by 150px'),
+        'bones-thumb-320' => __('320px by 200px'),
+    ) );
 }
 
 
@@ -48,7 +64,7 @@ function custom_breadcrumbs() {
     $separator          = '&gt;';
     $breadcrums_id      = 'breadcrumbs';
     $breadcrums_class   = 'breadcrumbs';
-    $home_title         = 'Homepage';
+    $home_title         = 'Home';
       
     // If you have any custom post types with custom taxonomies, put the taxonomy name below (e.g. product_cat)
     $custom_taxonomy    = 'product_cat';

@@ -29,6 +29,8 @@ get_header(); ?>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?>
  
 			<?php endif; ?>
+
+			<section id="post-contain">
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
@@ -56,7 +58,7 @@ get_header(); ?>
 
 		endif;
 		?>
-
+		</section>
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
 

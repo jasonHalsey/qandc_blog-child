@@ -68,10 +68,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 4, sass/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, sass/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
 /* line 1, sass/partials/_existing_styles.scss */
 body {
   margin: 0;
-  background: url(http://www.qandc.com//img/page-bg.png);
+  background: url(http://www.qandc.com/img/page-bg.png);
   font-family: 'nexa_lightregular', sans-serif;
   font-size: 14px;
   line-height: 25px;
@@ -481,7 +491,7 @@ body:before,
   position: relative;
   margin: 0 auto;
   height: 64px;
-  background: url(../img/page-bg.png);
+  background: url(http://www.qandc.com/img/page-bg.png);
   border-bottom: 1px solid #eee;
 }
 
@@ -2286,4 +2296,141 @@ body:before,
 /* line 682, sass/partials/_existing_styles.scss */
 ul.top-nav #google_translate_element {
   display: block;
+}
+
+/* line 686, sass/partials/_existing_styles.scss */
+.hentry {
+  margin: 0 0 0 0;
+}
+
+/* line 690, sass/partials/_existing_styles.scss */
+.hentry {
+  padding-top: 0% !important;
+}
+
+/* line 694, sass/partials/_existing_styles.scss */
+.hentry {
+  background-color: #fff;
+  padding-top: 0;
+  position: relative;
+}
+
+/* line 700, sass/partials/_existing_styles.scss */
+.hentry.has-post-thumbnail {
+  padding-top: 0;
+}
+
+/* line 704, sass/partials/_existing_styles.scss */
+.hentry.sticky:not(.has-post-thumbnail) {
+  padding-top: -webkit-calc(0);
+  padding-top: calc(0);
+}
+
+/* line 709, sass/partials/_existing_styles.scss */
+.hentry + .hentry {
+  border-top: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+/* line 1, sass/partials/_structure.scss */
+.site-main {
+  padding-top: 0;
+}
+
+/* line 5, sass/partials/_structure.scss */
+#post-contain {
+  width: 100%;
+}
+/* line 20, sass/bourbon/addons/_clearfix.scss */
+#post-contain::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 9, sass/partials/_structure.scss */
+.qandc-post {
+  display: block;
+  width: 30.63333%;
+  position: relative;
+  float: left;
+  margin: 3.0% 2.0%;
+  height: 486px;
+  background-color: #fff;
+}
+/* line 17, sass/partials/_structure.scss */
+.qandc-post:first-child {
+  margin-left: 0;
+}
+/* line 20, sass/partials/_structure.scss */
+.qandc-post:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 23, sass/partials/_structure.scss */
+.qandc-post:nth-child(4n) {
+  margin-left: 0;
+}
+/* line 26, sass/partials/_structure.scss */
+.qandc-post img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: 8;
+}
+/* line 33, sass/partials/_structure.scss */
+.qandc-post .content-header {
+  position: relative;
+  height: 200px;
+}
+/* line 37, sass/partials/_structure.scss */
+.qandc-post .date_block {
+  position: absolute;
+  background-color: #666;
+  padding: 0.25em 0.5em;
+  z-index: 10;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 44, sass/partials/_structure.scss */
+.qandc-post .date_block .datemon {
+  font-size: 1.0em;
+  line-height: 0.5em;
+}
+/* line 48, sass/partials/_structure.scss */
+.qandc-post .date_block .datenum {
+  font-size: 1.5em;
+  letter-spacing: 4px;
+}
+/* line 53, sass/partials/_structure.scss */
+.qandc-post .entry-title {
+  font-size: 2.2rem;
+  line-height: 1.2308;
+  margin-bottom: 0.08em;
+  margin-top: 0.5em;
+}
+
+/* line 1, sass/partials/_category-drop.scss */
+#filter_block {
+  background-color: #242526;
+  width: 100%;
+  padding: 1.0em;
+}
+/* line 20, sass/bourbon/addons/_clearfix.scss */
+#filter_block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 6, sass/partials/_category-drop.scss */
+#filter_block h3 {
+  display: none;
+}
+/* line 9, sass/partials/_category-drop.scss */
+#filter_block input, #filter_block button, #filter_block select {
+  font-size: 1.0rem;
+  font-family: "nexa_boldregular", sans-serif !important;
+}
+/* line 13, sass/partials/_category-drop.scss */
+#filter_block #cat {
+  float: right;
 }

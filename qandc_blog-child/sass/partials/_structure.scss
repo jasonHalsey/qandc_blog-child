@@ -1,0 +1,59 @@
+.site-main{
+	padding-top: 0;
+}
+
+#post-contain{
+	width:100%;
+	@include clearfix;
+}
+.qandc-post{
+	display:block;
+	width:30.63333%;
+	position: relative;
+	float:left;
+	margin: 3.0% 2.0%;
+	height:486px;
+	background-color: #fff;
+	&:first-child{
+		margin-left:0;
+	}
+	&:nth-child(3n){
+		margin-right:0;
+	}
+	&:nth-child(4n){
+		margin-left:0;
+	}
+	img{
+		width:100%;
+		height:auto;
+		position: absolute;
+		top: 0;
+		z-index:8;
+	}
+	.content-header{
+		position: relative;
+		height:200px;
+	}
+	.date_block{
+		position: absolute;
+		background-color: #666;
+		padding:0.25em 0.5em;
+		z-index:10;
+		color:#fff;
+		text-transform: uppercase;
+		.datemon{
+			font-size: 1.0em;
+			line-height: 0.5em;
+		}
+		.datenum{
+			font-size: 1.5em;
+			letter-spacing: 4px;
+		}
+	}
+	.entry-title {
+    font-size: 2.2rem;
+    line-height: 1.2308;
+    margin-bottom: 0.08em;
+    margin-top:  0.5em;
+	}
+}

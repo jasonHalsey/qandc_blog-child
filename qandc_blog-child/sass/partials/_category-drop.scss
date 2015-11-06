@@ -1,0 +1,16 @@
+#filter_block{
+	background-color: #242526;
+	width:100%;
+	padding:1.0em;
+	@include clearfix;
+	h3{
+		display:none;
+	}
+	input, button, select{
+		font-size: 1.0rem;
+		font-family: 'nexa_boldregular', sans-serif!important;
+	}
+	#cat{
+		float:right;
+	}
+}

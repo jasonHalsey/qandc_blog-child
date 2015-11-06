@@ -1,4 +1,4 @@
-body{margin:0; background:url(http://www.qandc.com//img/page-bg.png); font-family:'nexa_lightregular', sans-serif; font-size:14px; line-height:25px; color:#7d7a75;}
+body{margin:0; background:url(http://www.qandc.com/img/page-bg.png); font-family:'nexa_lightregular', sans-serif; font-size:14px; line-height:25px; color:#7d7a75;}
 h7{font-family:'nexa_boldregular', sans-serif; font-size:14px; line-height:25px; color:#7d7a75;}
 
 h1, h2, h3, h4, h5, h6{font-family:'Oswald', sans-serif; font-weight:400; color:#4c4b48; margin:0 0 25px 0; text-transform:uppercase;}
@@ -91,7 +91,7 @@ body:before,
 
 
 .nav-fixed .top-sticky-frame{position:fixed; top:0; left:0; width:100%; height:65px; z-index:999;}
-.nav-fixed .top-sticky{width:960px; position:relative; margin:0 auto; height:64px; background:url(../img/page-bg.png); border-bottom:1px solid #eee;}
+.nav-fixed .top-sticky{width:960px; position:relative; margin:0 auto; height:64px; background:url(http://www.qandc.com/img/page-bg.png); border-bottom:1px solid #eee;}
 .nav-fixed .page-logo{top:0;}
 .nav-fixed .page-logo img{height:65px;}
 
@@ -681,4 +681,31 @@ body:before,
 }
 ul.top-nav #google_translate_element{
 	display: block;
+}
+
+.hentry{
+	margin: 0 0 0 0;
+}
+
+.hentry {
+		padding-top: 0%!important;
+	}
+
+.hentry {
+	background-color: #fff;
+	padding-top: 0;
+	position: relative;
+}
+
+.hentry.has-post-thumbnail {
+	padding-top: 0;
+}
+
+.hentry.sticky:not(.has-post-thumbnail) {
+	padding-top: -webkit-calc(0);
+	padding-top: calc(0);
+}
+
+.hentry + .hentry {
+	border-top: 1px solid rgba(51, 51, 51, 0.1);
 }

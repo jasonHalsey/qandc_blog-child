@@ -4,7 +4,13 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "bourbon/bourbon";
+@import "neat/neat";
 
 @import url("../twentyfifteen/style.css");
 
+
 @import "partials/existing_styles";
+@import "partials/structure";
+@import "partials/category-drop";
+@import "partials/variables";
