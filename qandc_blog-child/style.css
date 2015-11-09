@@ -2479,12 +2479,16 @@ ul.top-nav #google_translate_element {
   background-color: transparent;
 }
 /* line 104, sass/partials/_structure.scss */
+.qandc-post-full img {
+  position: relative;
+}
+/* line 108, sass/partials/_structure.scss */
 .qandc-post-full .date_block {
   position: relative;
   padding-left: 0.5em 1.0em;
 }
 
-/* line 114, sass/partials/_structure.scss */
+/* line 118, sass/partials/_structure.scss */
 .entry-content-single {
   width: 70%;
   display: block;
@@ -2493,7 +2497,7 @@ ul.top-nav #google_translate_element {
   padding: 1.0em;
 }
 
-/* line 122, sass/partials/_structure.scss */
+/* line 126, sass/partials/_structure.scss */
 .entry-header-single {
   width: 25%;
   float: left;
@@ -2501,34 +2505,34 @@ ul.top-nav #google_translate_element {
   padding: 1.0em;
 }
 
-/* line 129, sass/partials/_structure.scss */
+/* line 133, sass/partials/_structure.scss */
 .more-link {
   display: none;
 }
 
-/* line 133, sass/partials/_structure.scss */
+/* line 137, sass/partials/_structure.scss */
 .desktop-list {
   display: block;
 }
 @media screen and (max-width: 979px) {
-  /* line 133, sass/partials/_structure.scss */
+  /* line 137, sass/partials/_structure.scss */
   .desktop-list {
     display: none;
   }
 }
 
-/* line 140, sass/partials/_structure.scss */
+/* line 144, sass/partials/_structure.scss */
 .mobile-list {
   display: none;
 }
 @media screen and (max-width: 979px) {
-  /* line 140, sass/partials/_structure.scss */
+  /* line 144, sass/partials/_structure.scss */
   .mobile-list {
     display: block;
   }
 }
 
-/* line 148, sass/partials/_structure.scss */
+/* line 152, sass/partials/_structure.scss */
 .footer-nav-5 button {
   font-size: 0.5rem;
 }

@@ -101,6 +101,10 @@
 	@extend .qandc-post;
 	width:100%;	
 	background-color: transparent;
+	img{
+		position:relative;
+
+	}
 	.date_block{
 		position: relative;
 		padding-left: 0.5em 1.0em;

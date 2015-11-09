@@ -13,6 +13,7 @@
        wp_enqueue_script('jquery');
     }
 
+add_theme_support( 'post-thumbnails' );
 
 /*  Add Custom Scripts
   /* ------------------------------------ */ 
