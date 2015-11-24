@@ -12,10 +12,10 @@
 
 	<?php
 		if ( is_single() ) :
-			echo '	<article id="post-', the_ID(), '" class="qandc-post-full">';
+			echo '<article id="post-', the_ID(), '" class="qandc-post-full">';
 			echo '<div class="content-header-single">';
 		else :
-			echo '	<article id="post-', the_ID(), '" class="qandc-post">';
+			echo '<article id="post-', the_ID(), '" class="qandc-post">';
 			echo '<div class="content-header">';
 		endif;
 	?>
@@ -79,16 +79,5 @@
 			?>
 		</div><!-- .entry-content -->
 
-		<?php
-			// Author bio.
-			if ( is_single() && get_the_author_meta( 'description' ) ) :
-				get_template_part( 'author-bio' );
-			endif;
-		?>
-
-		<footer class="entry-footer">
-			<?php twentyfifteen_entry_meta(); ?>
-			<?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-footer -->
 
 	</article><!-- #post-## -->

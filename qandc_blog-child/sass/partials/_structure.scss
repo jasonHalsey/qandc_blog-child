@@ -101,9 +101,9 @@
 	@extend .qandc-post;
 	width:100%;	
 	background-color: transparent;
+	height:inherit;
 	img{
 		position:relative;
-
 	}
 	.date_block{
 		position: relative;
@@ -121,6 +121,9 @@
 	float:right;
 	background-color: #fff;
 	padding: 1.0em;
+	@include media ($tablet) {
+		width:100%;
+	}
 }
 
 .entry-header-single{
@@ -128,6 +131,9 @@
 	float:left;
 	display:block;
 	padding: 1.0em;
+	@include media ($tablet) {
+		width:100%;
+	}
 }
 
 .more-link{

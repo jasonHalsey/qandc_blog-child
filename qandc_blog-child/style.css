@@ -416,7 +416,7 @@ body:before,
   right: 0;
   width: 30px;
   height: 30px;
-  background: url(../img/close-btn-2.png);
+  background: url(http://www.qandc.com/img/close-btn-2.png);
 }
 
 /* line 75, sass/partials/_existing_styles.scss */
@@ -606,7 +606,7 @@ body:before,
   right: -25px;
   width: 32px;
   height: 32px;
-  background: url(../img/close-btn.png);
+  background: url(http://www.qandc.com/img/close-btn.png);
 }
 
 /* line 107, sass/partials/_existing_styles.scss */
@@ -1600,7 +1600,7 @@ body:before,
     right: 0;
     width: 55px;
     height: 55px;
-    background: url(../img/mobile-nav-trigger.png);
+    background: url(http://www.qandc.com/img/mobile-nav-trigger.png);
   }
 
   /* line 326, sass/partials/_existing_styles.scss */
@@ -2477,8 +2477,9 @@ ul.top-nav #google_translate_element {
 .qandc-post-full {
   width: 100%;
   background-color: transparent;
+  height: inherit;
 }
-/* line 104, sass/partials/_structure.scss */
+/* line 105, sass/partials/_structure.scss */
 .qandc-post-full img {
   position: relative;
 }
@@ -2496,43 +2497,55 @@ ul.top-nav #google_translate_element {
   background-color: #fff;
   padding: 1.0em;
 }
+@media screen and (max-width: 979px) {
+  /* line 118, sass/partials/_structure.scss */
+  .entry-content-single {
+    width: 100%;
+  }
+}
 
-/* line 126, sass/partials/_structure.scss */
+/* line 129, sass/partials/_structure.scss */
 .entry-header-single {
   width: 25%;
   float: left;
   display: block;
   padding: 1.0em;
 }
+@media screen and (max-width: 979px) {
+  /* line 129, sass/partials/_structure.scss */
+  .entry-header-single {
+    width: 100%;
+  }
+}
 
-/* line 133, sass/partials/_structure.scss */
+/* line 139, sass/partials/_structure.scss */
 .more-link {
   display: none;
 }
 
-/* line 137, sass/partials/_structure.scss */
+/* line 143, sass/partials/_structure.scss */
 .desktop-list {
   display: block;
 }
 @media screen and (max-width: 979px) {
-  /* line 137, sass/partials/_structure.scss */
+  /* line 143, sass/partials/_structure.scss */
   .desktop-list {
     display: none;
   }
 }
 
-/* line 144, sass/partials/_structure.scss */
+/* line 150, sass/partials/_structure.scss */
 .mobile-list {
   display: none;
 }
 @media screen and (max-width: 979px) {
-  /* line 144, sass/partials/_structure.scss */
+  /* line 150, sass/partials/_structure.scss */
   .mobile-list {
     display: block;
   }
 }
 
-/* line 152, sass/partials/_structure.scss */
+/* line 158, sass/partials/_structure.scss */
 .footer-nav-5 button {
   font-size: 0.5rem;
 }
