@@ -25,8 +25,8 @@
 		<![endif]-->
 		<?php // or, set /favicon.ico for IE10 win ?>
 		<meta name="msapplication-TileColor" content="#f01d4f">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		
+		<!-- <link rel="stylesheet" type="text/css" href="style.css">
+ -->		
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 		<?php // wordpress head functions ?>

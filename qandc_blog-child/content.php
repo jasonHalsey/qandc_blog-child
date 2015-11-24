@@ -20,7 +20,7 @@
 		endif;
 	?>
 			<div class="date_block">
-				<span class="datenum"><?php the_time('m'); ?></span><br />
+				<span class="datenum"><?php the_time('d'); ?></span><br />
 				<span class="datemon"><?php the_time('M'); ?></span>
 				
 			</div>
