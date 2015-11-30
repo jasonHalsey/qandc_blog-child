@@ -95,10 +95,10 @@
 							<div class="reservations-close"></div>
 						</div><!-- End div.eservations-frame -->
 
-
-
 						<ul class="main-nav">
-							<li><h7><a href="/awards-and-accolades.php">REVIEWS &amp; AWARDS</a> &nbsp;|&nbsp;&nbsp;</h7></li>
+
+							<li><h7><a href="<?php bloginfo('url');?>">BLOG</a> &nbsp;|&nbsp;&nbsp;</h7></li>
+							<li><h7><a href="/awards-and-accolades.php">REVIEWS & AWARDS</a> &nbsp;|&nbsp;&nbsp;</h7></li>
 
 							<li><h7><a href="/gallery.php">GALLERY</a>&nbsp;|&nbsp;&nbsp;</h7></li>
 
@@ -129,7 +129,9 @@
 			                    </ul>
 								</li>
 
+							<!--<li><h7><a href="/guide.php">NOLA GUIDE</a></h7></li>-->
 						</ul>
+
 					</div>
 				</div>
 
@@ -170,7 +172,8 @@
 					<div class="mobile-nav-trigger"></div>
 					<div class="mobile-nav-frame">
 						<ul class="mobile-nav">
- 
+ 								<li><a href="<?php bloginfo('url');?>">BLOG</a></li>
+ 								<li><a href="/awards-and-accolades.php">REVIEWS & AWARDS</a></li>
 				        <li><a href="/gallery.php">GALLERY</a></li>
 								<li><a href="/rooms.php">ROOMS</a></li>
 								<li><a href="/bar.php">BAR</a></li>
@@ -185,7 +188,7 @@
 								</li>
 								<li><a href="/amenities.php">AMENITIES</a></li>
 								<li><a href="/location.php">LOCATION</a></li>
-								<li><a href="/guide.php">NOLA GUIDE</a></li>
+								<!-- <li><a href="/guide.php">NOLA GUIDE</a></li> -->
 				            
 						</ul>
 					</div>
@@ -199,9 +202,9 @@
 				        'orderby' => 'rand'
 				    );
 
-				    $the_query = new WP_Query( $args );
+				    $the_mob_query = new WP_Query( $args );
 				?>
-				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<?php if ( $the_mob_query->have_posts() ) : while ( $the_mob_query->have_posts() ) : $the_mob_query->the_post(); ?>
 
 					<div class="banner">
 						<ul class="banner-slider">

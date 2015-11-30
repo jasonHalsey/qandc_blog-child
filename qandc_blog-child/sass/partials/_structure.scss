@@ -59,23 +59,27 @@ h1.blog-title{
 		}
 	}
 	.entry-title {
-    font-size: 2.2rem;
+    font-size: 1.75rem;
     line-height: 1.2308;
     margin-bottom: 0.08em;
     margin-top:  0.5em;
-    width:75%;
+    width:85%;
 		float:left;
+		display: block;
 	}
 	.entry-header{
 		@include clearfix;
 		
 	}
 	.readmore-arrow{
-		width:50px;
+		width:30px;
 		height:50px;
 		position: relative;
 		margin-top: 0.85em;
     opacity: 0.25;
+    float:left;
+    display:block;
+ 
 	}
 	@include media ($tablet) {
     width:100%;
@@ -88,16 +92,16 @@ h1.blog-title{
     	height:auto;
     }
     .content-header{
-    	width:50%;
+    	width:100%;
     	float:left;
     	height:inherit;
     }
     .entry-header{
-    	width:50%;
+    	width:100%;
     	float:right;
     }
     .entry-content{
-    	width:50%;
+    	width:100%;
     	float:right;
     }
   }

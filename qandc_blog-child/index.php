@@ -34,9 +34,9 @@ get_header(); ?>
 				        'orderby' => 'rand'
 				    );
 
-				    $the_query = new WP_Query( $args );
+				    $the_h1_query = new WP_Query( $args );
 				?>
-				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				<?php if ( $the_h1_query->have_posts() ) : while ( $the_h1_query->have_posts() ) : $the_h1_query->the_post(); ?>
 
 					<h1 class="blog-title"><?php echo get_post_meta( $post->ID, '_cmb2_h1_title', true ); ?></h1>
 
