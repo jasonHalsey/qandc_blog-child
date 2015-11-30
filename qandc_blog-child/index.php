@@ -11,7 +11,6 @@
  *
  * @package WordPress
  * @subpackage Twenty_Fifteen
- * @signeurlpaiement(clent, data)nce Twenty Fifteen 1.0
  */
 
 get_header(); ?>
@@ -20,7 +19,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -29,8 +27,25 @@ get_header(); ?>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?>
  
 			<?php endif; ?>
+			<?php
+				    $args = array(
+				        'post_type' => 'bloginfo',
+				        'posts_per_page' => 1,
+				        'orderby' => 'rand'
+				    );
 
+				    $the_query = new WP_Query( $args );
+				?>
+				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+					<h1 class="blog-title"><?php echo get_post_meta( $post->ID, '_cmb2_h1_title', true ); ?></h1>
+
+				<?php endwhile; else : ?>
+				    <p>Missing H1 </p>
+				<?php endif;
+				wp_reset_postdata(); ?>
 			<section id="post-contain">
+
 			<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();

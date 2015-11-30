@@ -134,12 +134,30 @@
 				</div>
 
 
+				<?php
+				    $args = array(
+				        'post_type' => 'bloginfo',
+				        'posts_per_page' => 1,
+				        'orderby' => 'rand'
+				    );
 
-				<div class="banner">
-					<ul class="banner-slider">
-						<li><img src="http://www.qandc.com/img/slider/slide-sm-queen-new.jpg" alt="Q&C Hotel Guestroom" /></li>					
-					</ul>
-				</div><!--End div.banner -->
+				    $the_query = new WP_Query( $args );
+				?>
+				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+					<div class="banner">
+						<ul class="banner-slider">
+							<li>
+								<img src="<?php echo get_post_meta( $post->ID, '_cmb2_header_image', true ); ?>" />
+							</li>					
+						</ul>
+					</div><!--End div.banner -->
+
+
+				<?php endwhile; else : ?>
+				    <p>Missing H1 </p>
+				<?php endif;
+				wp_reset_postdata(); ?>
 
 				
 			</div><!-- End div.header -->
@@ -174,9 +192,30 @@
 
 					<a class="reservation" href="https://gc.synxis.com/rez.aspx?Hotel=61552&Chain=15198">RESERVATIONS</a>
 
-				<div class="banner">
-					<img src="http://www.qandc.com/img/slider/slide-sm-queen-new.jpg" alt="Q&C Hotel Guestroom" />
-				</div>
+				<?php
+				    $args = array(
+				        'post_type' => 'bloginfo',
+				        'posts_per_page' => 1,
+				        'orderby' => 'rand'
+				    );
+
+				    $the_query = new WP_Query( $args );
+				?>
+				<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+					<div class="banner">
+						<ul class="banner-slider">
+							<li>
+								<img src="<?php echo get_post_meta( $post->ID, '_cmb2_header_image', true ); ?>" />
+							</li>					
+						</ul>
+					</div><!--End div.banner -->
+
+
+				<?php endwhile; else : ?>
+				    <p>Missing H1 </p>
+				<?php endif;
+				wp_reset_postdata(); ?>
 			</div>
 
 

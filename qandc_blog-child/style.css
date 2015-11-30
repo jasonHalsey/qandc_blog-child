@@ -428,6 +428,7 @@ body:before,
 .banner img {
   display: block;
   max-width: 100%;
+  width: 100%;
 }
 
 /* line 77, sass/partials/_existing_styles.scss */
@@ -2359,7 +2360,15 @@ ul.top-nav #google_translate_element {
   display: table;
 }
 
-/* line 10, sass/partials/_structure.scss */
+/* line 11, sass/partials/_structure.scss */
+h1.blog-title {
+  line-height: 2.5em;
+  margin: 1.0em 0 0;
+  padding: 0;
+  font-size: 2.0em;
+}
+
+/* line 17, sass/partials/_structure.scss */
 .qandc-post, .qandc-post-full {
   display: block;
   width: 30.63333%;
@@ -2369,19 +2378,19 @@ ul.top-nav #google_translate_element {
   height: 486px;
   background-color: #fff;
 }
-/* line 18, sass/partials/_structure.scss */
+/* line 25, sass/partials/_structure.scss */
 .qandc-post:first-child, .qandc-post-full:first-child {
   margin-left: 0;
 }
-/* line 21, sass/partials/_structure.scss */
+/* line 28, sass/partials/_structure.scss */
 .qandc-post:nth-child(3n), .qandc-post-full:nth-child(3n) {
   margin-right: 0;
 }
-/* line 24, sass/partials/_structure.scss */
+/* line 31, sass/partials/_structure.scss */
 .qandc-post:nth-child(4n), .qandc-post-full:nth-child(4n) {
   margin-left: 0;
 }
-/* line 27, sass/partials/_structure.scss */
+/* line 34, sass/partials/_structure.scss */
 .qandc-post img, .qandc-post-full img {
   width: 100%;
   height: auto;
@@ -2389,12 +2398,12 @@ ul.top-nav #google_translate_element {
   top: 0;
   z-index: 8;
 }
-/* line 34, sass/partials/_structure.scss */
+/* line 41, sass/partials/_structure.scss */
 .qandc-post .content-header, .qandc-post-full .content-header {
   position: relative;
   height: 200px;
 }
-/* line 38, sass/partials/_structure.scss */
+/* line 45, sass/partials/_structure.scss */
 .qandc-post .date_block, .qandc-post-full .date_block {
   position: absolute;
   background-color: #666;
@@ -2403,17 +2412,17 @@ ul.top-nav #google_translate_element {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 45, sass/partials/_structure.scss */
+/* line 52, sass/partials/_structure.scss */
 .qandc-post .date_block .datemon, .qandc-post-full .date_block .datemon {
   font-size: 1.0em;
   line-height: 0.5em;
 }
-/* line 49, sass/partials/_structure.scss */
+/* line 56, sass/partials/_structure.scss */
 .qandc-post .date_block .datenum, .qandc-post-full .date_block .datenum {
   font-size: 1.5em;
   letter-spacing: 4px;
 }
-/* line 54, sass/partials/_structure.scss */
+/* line 61, sass/partials/_structure.scss */
 .qandc-post .entry-title, .qandc-post-full .entry-title {
   font-size: 2.2rem;
   line-height: 1.2308;
@@ -2428,7 +2437,7 @@ ul.top-nav #google_translate_element {
   content: "";
   display: table;
 }
-/* line 66, sass/partials/_structure.scss */
+/* line 73, sass/partials/_structure.scss */
 .qandc-post .readmore-arrow, .qandc-post-full .readmore-arrow {
   width: 50px;
   height: 50px;
@@ -2437,7 +2446,7 @@ ul.top-nav #google_translate_element {
   opacity: 0.25;
 }
 @media screen and (max-width: 979px) {
-  /* line 10, sass/partials/_structure.scss */
+  /* line 17, sass/partials/_structure.scss */
   .qandc-post, .qandc-post-full {
     width: 100%;
     margin: 2.0em 0;
@@ -2449,47 +2458,47 @@ ul.top-nav #google_translate_element {
     content: "";
     display: table;
   }
-  /* line 78, sass/partials/_structure.scss */
+  /* line 85, sass/partials/_structure.scss */
   .qandc-post img, .qandc-post-full img {
     position: relative;
     width: 100%;
     height: auto;
   }
-  /* line 83, sass/partials/_structure.scss */
+  /* line 90, sass/partials/_structure.scss */
   .qandc-post .content-header, .qandc-post-full .content-header {
     width: 50%;
     float: left;
     height: inherit;
   }
-  /* line 88, sass/partials/_structure.scss */
+  /* line 95, sass/partials/_structure.scss */
   .qandc-post .entry-header, .qandc-post-full .entry-header {
     width: 50%;
     float: right;
   }
-  /* line 92, sass/partials/_structure.scss */
+  /* line 99, sass/partials/_structure.scss */
   .qandc-post .entry-content, .qandc-post-full .entry-content {
     width: 50%;
     float: right;
   }
 }
 
-/* line 100, sass/partials/_structure.scss */
+/* line 107, sass/partials/_structure.scss */
 .qandc-post-full {
   width: 100%;
   background-color: transparent;
   height: inherit;
 }
-/* line 105, sass/partials/_structure.scss */
+/* line 112, sass/partials/_structure.scss */
 .qandc-post-full img {
   position: relative;
 }
-/* line 108, sass/partials/_structure.scss */
+/* line 115, sass/partials/_structure.scss */
 .qandc-post-full .date_block {
   position: relative;
   padding-left: 0.5em 1.0em;
 }
 
-/* line 118, sass/partials/_structure.scss */
+/* line 125, sass/partials/_structure.scss */
 .entry-content-single {
   width: 70%;
   display: block;
@@ -2498,13 +2507,13 @@ ul.top-nav #google_translate_element {
   padding: 1.0em;
 }
 @media screen and (max-width: 979px) {
-  /* line 118, sass/partials/_structure.scss */
+  /* line 125, sass/partials/_structure.scss */
   .entry-content-single {
     width: 100%;
   }
 }
 
-/* line 129, sass/partials/_structure.scss */
+/* line 136, sass/partials/_structure.scss */
 .entry-header-single {
   width: 25%;
   float: left;
@@ -2512,40 +2521,40 @@ ul.top-nav #google_translate_element {
   padding: 1.0em;
 }
 @media screen and (max-width: 979px) {
-  /* line 129, sass/partials/_structure.scss */
+  /* line 136, sass/partials/_structure.scss */
   .entry-header-single {
     width: 100%;
   }
 }
 
-/* line 139, sass/partials/_structure.scss */
+/* line 146, sass/partials/_structure.scss */
 .more-link {
   display: none;
 }
 
-/* line 143, sass/partials/_structure.scss */
+/* line 150, sass/partials/_structure.scss */
 .desktop-list {
   display: block;
 }
 @media screen and (max-width: 979px) {
-  /* line 143, sass/partials/_structure.scss */
+  /* line 150, sass/partials/_structure.scss */
   .desktop-list {
     display: none;
   }
 }
 
-/* line 150, sass/partials/_structure.scss */
+/* line 157, sass/partials/_structure.scss */
 .mobile-list {
   display: none;
 }
 @media screen and (max-width: 979px) {
-  /* line 150, sass/partials/_structure.scss */
+  /* line 157, sass/partials/_structure.scss */
   .mobile-list {
     display: block;
   }
 }
 
-/* line 158, sass/partials/_structure.scss */
+/* line 165, sass/partials/_structure.scss */
 .footer-nav-5 button {
   font-size: 0.5rem;
 }

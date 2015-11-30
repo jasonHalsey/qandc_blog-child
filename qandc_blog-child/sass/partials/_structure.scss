@@ -7,6 +7,13 @@
 	width:100%;
 	@include clearfix;
 }
+
+h1.blog-title{
+	line-height: 2.5em;
+	margin: 1.0em 0 0;
+	padding:0;
+	font-size: 2.0em;
+}
 .qandc-post{
 	display:block;
 	width:30.63333%;

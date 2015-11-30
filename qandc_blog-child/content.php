@@ -9,7 +9,6 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
-
 	<?php
 		if ( is_single() ) :
 			echo '<article id="post-', the_ID(), '" class="qandc-post-full">';
@@ -17,6 +16,7 @@
 		else :
 			echo '<article id="post-', the_ID(), '" class="qandc-post">';
 			echo '<div class="content-header">';
+			
 		endif;
 	?>
 			<div class="date_block">
