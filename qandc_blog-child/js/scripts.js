@@ -1,7 +1,6 @@
 jQuery(document).ready(function() {
 
-
-	console.log("we are in custom scripts")
+moveTitle();
 
 	jQuery(".res-btn").click(function(){
 		jQuery(".booking-widget").slideToggle(100);
@@ -47,6 +46,13 @@ jQuery(document).ready(function() {
 		var translateBlocks = jQuery('li.translate').detach();
 		          jQuery('ul.top-nav li:last').after(translateBlocks);
 		}
+	}
+
+	function moveTitle(){
+		
+		var titleBlock = jQuery('.custom-title').detach();
+		// jQuery('#filter_block').before(titleBlock);
+		jQuery( '#filter_block' ).append( titleBlock );
 
 	}
 

@@ -27,23 +27,11 @@ get_header(); ?>
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Top Sidebar')) : ?>
  
 			<?php endif; ?>
-			<?php
-				    $args = array(
-				        'post_type' => 'bloginfo',
-				        'posts_per_page' => 1,
-				        'orderby' => 'rand'
-				    );
+			
+			<div class="custom-title">
+				<?php require_once('inc/blog-title.php') ?>
+			</div>
 
-				    $the_h1_query = new WP_Query( $args );
-				?>
-				<?php if ( $the_h1_query->have_posts() ) : while ( $the_h1_query->have_posts() ) : $the_h1_query->the_post(); ?>
-
-					<h1 class="blog-title"><?php echo get_post_meta( $post->ID, '_cmb2_h1_title', true ); ?></h1>
-
-				<?php endwhile; else : ?>
-				    <p>Missing H1 </p>
-				<?php endif;
-				wp_reset_postdata(); ?>
 			<section id="post-contain">
 
 			<?php

@@ -157,7 +157,7 @@
 
 
 				<?php endwhile; else : ?>
-				    <p>Missing H1 </p>
+
 				<?php endif;
 				wp_reset_postdata(); ?>
 
@@ -216,7 +216,7 @@
 
 
 				<?php endwhile; else : ?>
-				    <p>Missing H1 </p>
+				    <p> </p>
 				<?php endif;
 				wp_reset_postdata(); ?>
 			</div>

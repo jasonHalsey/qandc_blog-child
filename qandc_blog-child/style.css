@@ -93,7 +93,7 @@ html {
 body {
   margin: 0;
   background: url(http://www.qandc.com/img/page-bg.png);
-  font-family: 'nexa_lightregular', sans-serif;
+  font-family: 'nexa_boldregular', sans-serif;
   font-size: 14px;
   line-height: 25px;
   color: #7d7a75;
@@ -2363,13 +2363,28 @@ ul.top-nav #google_translate_element {
 
 /* line 11, sass/partials/_structure.scss */
 h1.blog-title {
-  line-height: 2.5em;
-  margin: 1.0em 0 0;
+  line-height: 1.5em;
+  margin: 0;
   padding: 0;
   font-size: 2.0em;
+  color: #fff;
 }
 
-/* line 17, sass/partials/_structure.scss */
+/* line 18, sass/partials/_structure.scss */
+.custom-title {
+  display: block;
+  float: left;
+}
+@media screen and (max-width: 979px) {
+  /* line 18, sass/partials/_structure.scss */
+  .custom-title {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* line 27, sass/partials/_structure.scss */
 .qandc-post, .qandc-post-full {
   display: block;
   width: 30.63333%;
@@ -2379,19 +2394,19 @@ h1.blog-title {
   height: 486px;
   background-color: #fff;
 }
-/* line 25, sass/partials/_structure.scss */
+/* line 35, sass/partials/_structure.scss */
 .qandc-post:first-child, .qandc-post-full:first-child {
   margin-left: 0;
 }
-/* line 28, sass/partials/_structure.scss */
+/* line 38, sass/partials/_structure.scss */
 .qandc-post:nth-child(3n), .qandc-post-full:nth-child(3n) {
   margin-right: 0;
 }
-/* line 31, sass/partials/_structure.scss */
+/* line 41, sass/partials/_structure.scss */
 .qandc-post:nth-child(4n), .qandc-post-full:nth-child(4n) {
   margin-left: 0;
 }
-/* line 34, sass/partials/_structure.scss */
+/* line 44, sass/partials/_structure.scss */
 .qandc-post img, .qandc-post-full img {
   width: 100%;
   height: auto;
@@ -2399,12 +2414,12 @@ h1.blog-title {
   top: 0;
   z-index: 8;
 }
-/* line 41, sass/partials/_structure.scss */
+/* line 51, sass/partials/_structure.scss */
 .qandc-post .content-header, .qandc-post-full .content-header {
   position: relative;
   height: 200px;
 }
-/* line 45, sass/partials/_structure.scss */
+/* line 55, sass/partials/_structure.scss */
 .qandc-post .date_block, .qandc-post-full .date_block {
   position: absolute;
   background-color: #666;
@@ -2413,18 +2428,19 @@ h1.blog-title {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 52, sass/partials/_structure.scss */
+/* line 62, sass/partials/_structure.scss */
 .qandc-post .date_block .datemon, .qandc-post-full .date_block .datemon {
   font-size: 1.0em;
   line-height: 0.5em;
 }
-/* line 56, sass/partials/_structure.scss */
+/* line 66, sass/partials/_structure.scss */
 .qandc-post .date_block .datenum, .qandc-post-full .date_block .datenum {
   font-size: 1.5em;
   letter-spacing: 4px;
 }
-/* line 61, sass/partials/_structure.scss */
+/* line 71, sass/partials/_structure.scss */
 .qandc-post .entry-title, .qandc-post-full .entry-title {
+  font-family: 'nexa_boldregular';
   font-size: 1.75rem;
   line-height: 1.2308;
   margin-bottom: 0.08em;
@@ -2433,13 +2449,17 @@ h1.blog-title {
   float: left;
   display: block;
 }
+/* line 80, sass/partials/_structure.scss */
+.qandc-post .entry-title a, .qandc-post-full .entry-title a {
+  font-family: 'Oswald';
+}
 /* line 20, sass/bourbon/addons/_clearfix.scss */
 .qandc-post .entry-header::after, .qandc-post-full .entry-header::after {
   clear: both;
   content: "";
   display: table;
 }
-/* line 74, sass/partials/_structure.scss */
+/* line 88, sass/partials/_structure.scss */
 .qandc-post .readmore-arrow, .qandc-post-full .readmore-arrow {
   width: 30px;
   height: 50px;
@@ -2450,7 +2470,7 @@ h1.blog-title {
   display: block;
 }
 @media screen and (max-width: 979px) {
-  /* line 17, sass/partials/_structure.scss */
+  /* line 27, sass/partials/_structure.scss */
   .qandc-post, .qandc-post-full {
     width: 100%;
     margin: 2.0em 0;
@@ -2462,47 +2482,47 @@ h1.blog-title {
     content: "";
     display: table;
   }
-  /* line 89, sass/partials/_structure.scss */
+  /* line 103, sass/partials/_structure.scss */
   .qandc-post img, .qandc-post-full img {
     position: relative;
     width: 100%;
     height: auto;
   }
-  /* line 94, sass/partials/_structure.scss */
+  /* line 108, sass/partials/_structure.scss */
   .qandc-post .content-header, .qandc-post-full .content-header {
     width: 100%;
     float: left;
     height: inherit;
   }
-  /* line 99, sass/partials/_structure.scss */
+  /* line 113, sass/partials/_structure.scss */
   .qandc-post .entry-header, .qandc-post-full .entry-header {
     width: 100%;
     float: right;
   }
-  /* line 103, sass/partials/_structure.scss */
+  /* line 117, sass/partials/_structure.scss */
   .qandc-post .entry-content, .qandc-post-full .entry-content {
     width: 100%;
     float: right;
   }
 }
 
-/* line 111, sass/partials/_structure.scss */
+/* line 125, sass/partials/_structure.scss */
 .qandc-post-full {
   width: 100%;
   background-color: transparent;
   height: inherit;
 }
-/* line 116, sass/partials/_structure.scss */
+/* line 130, sass/partials/_structure.scss */
 .qandc-post-full img {
   position: relative;
 }
-/* line 119, sass/partials/_structure.scss */
+/* line 133, sass/partials/_structure.scss */
 .qandc-post-full .date_block {
   position: relative;
   padding-left: 0.5em 1.0em;
 }
 
-/* line 129, sass/partials/_structure.scss */
+/* line 143, sass/partials/_structure.scss */
 .entry-content-single {
   width: 70%;
   display: block;
@@ -2511,13 +2531,13 @@ h1.blog-title {
   padding: 1.0em;
 }
 @media screen and (max-width: 979px) {
-  /* line 129, sass/partials/_structure.scss */
+  /* line 143, sass/partials/_structure.scss */
   .entry-content-single {
     width: 100%;
   }
 }
 
-/* line 140, sass/partials/_structure.scss */
+/* line 154, sass/partials/_structure.scss */
 .entry-header-single {
   width: 25%;
   float: left;
@@ -2525,40 +2545,40 @@ h1.blog-title {
   padding: 1.0em;
 }
 @media screen and (max-width: 979px) {
-  /* line 140, sass/partials/_structure.scss */
+  /* line 154, sass/partials/_structure.scss */
   .entry-header-single {
     width: 100%;
   }
 }
 
-/* line 150, sass/partials/_structure.scss */
+/* line 164, sass/partials/_structure.scss */
 .more-link {
   display: none;
 }
 
-/* line 154, sass/partials/_structure.scss */
+/* line 168, sass/partials/_structure.scss */
 .desktop-list {
   display: block;
 }
 @media screen and (max-width: 979px) {
-  /* line 154, sass/partials/_structure.scss */
+  /* line 168, sass/partials/_structure.scss */
   .desktop-list {
     display: none;
   }
 }
 
-/* line 161, sass/partials/_structure.scss */
+/* line 175, sass/partials/_structure.scss */
 .mobile-list {
   display: none;
 }
 @media screen and (max-width: 979px) {
-  /* line 161, sass/partials/_structure.scss */
+  /* line 175, sass/partials/_structure.scss */
   .mobile-list {
     display: block;
   }
 }
 
-/* line 169, sass/partials/_structure.scss */
+/* line 183, sass/partials/_structure.scss */
 .footer-nav-5 button {
   font-size: 0.5rem;
 }
@@ -2587,4 +2607,18 @@ h1.blog-title {
 /* line 13, sass/partials/_category-drop.scss */
 #filter_block #cat {
   float: right;
+}
+
+@font-face {
+  font-family: 'nexa_boldregular';
+  src: url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Nexa_Free_Bold-webfont.eot");
+  src: url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Nexa_Free_Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Nexa_Free_Bold-webfont.woff2") format("woff2"), url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Nexa_Free_Bold-webfont.woff") format("woff"), url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Nexa_Free_Bold-webfont.ttf") format("truetype"), url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Nexa_Free_Bold-webfont.svg#nexa_boldregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url("http://www.qandc.com/blog/wp-content/themes/qandc_blog-child/font/Oswald-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
